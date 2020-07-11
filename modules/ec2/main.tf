@@ -75,7 +75,7 @@ resource "aws_instance" "web" {
   # this should be on port 80
   provisioner "remote-exec" {
     inline = [
-      "sh ~/build.sh"
+      "sed -i s/\\r//g build.sh && sh build.sh",
     ]
   }
 }
