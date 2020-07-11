@@ -70,9 +70,7 @@ resource "aws_instance" "web" {
     destination = "~"
   }
 
-  # We run a remote provisioner on the instance after creating it.
-  # In this case, we just install nginx and start it. By default,
-  # this should be on port 80
+  # When script is uploaded to linux env from windows, we need to remove '\r' newline symbol
   provisioner "remote-exec" {
     inline = [
       "sed -i s/\\\\r//g build.sh && sh build.sh",

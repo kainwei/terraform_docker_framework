@@ -11,9 +11,11 @@ sudo docker volume create data-volume
 sudo docker build -t nginx:my_version01 .
 sudo docker run --rm -d --name=nginx01 -p 80:80 \
          --mount source=data-volume,target=/usr/share/nginx/html/log  \
-# Under below if command way to add health check
+         nginx:my_version01
+
+# Under below is the command way to add health check against Dockerfile way
 #        --health-cmd="curl --silent --fail localhost:80 || exit 1" \
 #        --health-interval=10s \
 #        --health-retries=12 \
 #        --health-timeout=2s \
-         nginx:my_version01
+
