@@ -65,10 +65,10 @@ resource "aws_instance" "web" {
   subnet_id = "${var.subnet_output_id}"
 
   # We use this to upload files
-  #provisioner "file" {
-  #  source = "util/"
-  #  destination = "~"
-  #}
+  provisioner "file" {
+    source = "util/"
+    destination = "~"
+  }
 
   # We run a remote provisioner on the instance after creating it.
   # In this case, we just install nginx and start it. By default,
