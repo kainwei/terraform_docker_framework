@@ -23,7 +23,8 @@ module "elb" {
 
 # Specify the provider and access details
 provider "aws" {
-  region = "${var.aws_region}"
-  access_key = "${var.access_key}"
-  secret_key = "${var.secret_key}"
+  region = "ap-southeast-2"
+  #access_key = "${var.access_key}"
+  #secret_key = "${var.secret_key}"
+  shared_credentials_file = "C:\\my_aws_credentials.txt"
 }
