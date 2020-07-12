@@ -44,8 +44,8 @@ As mentioned above, there are two functional scripts in 'util' dir. These two sc
 ![Kiku](screenshot/log page.png)
 
 Click the monitor log it would show:
-![Kiku](screenshot/docker monitor logs.png)
+![Kiku](screenshot/docker_monitor_logs.png)
 
 Words statistics script run like:
-![Kiku](screenshot/words_static.png)
+![Kiku](screenshot/words_statistics.png)
 
