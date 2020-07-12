@@ -40,4 +40,10 @@ Then Put EC2_IP or ELB_DNS_NAME into Internet Browser, you should see the Nginx 
 
 
 ##  Step Tree: The Script Output
-As mentioned above, there are two functional scripts in 'util' dir. These two script would run automatically after docker environment had been built. You can check them through nginx's web service by EC2_LOG_PATH or ELB_LOG_PATH which outputed after terraform apply run over.
+As mentioned above, there are two functional scripts in 'util' dir. These two script would run automatically after docker environment had been built. You can check them through nginx's web service by EC2_LOG_PATH or ELB_LOG_PATH which outputed after terraform apply run over. Log page like this:
+![Kiku](screenshot/log page.png)
+Click the monitor log it would show:
+![Kiku](screenshot/docker monitor logs.png)
+Words statistics script run like:
+![Kiku](screenshot/words_static.png)
+
