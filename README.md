@@ -20,4 +20,15 @@ aws_access_key_id = A1B2C3D4F5G6H7I8J9K0
 aws_secret_access_key = A1B2C3D4F5G6H7I8J9K0A1B2C3D4F5G6H7I8J9K0
 ```
 
+## Step One: Run Terraform
+Run command under root directory:
+```
+terraform init
+terraform apply
+```
+If you are using terrform running in windows, run:
+```
+terraform.exe init
+terraform.exe apply
+```
 
