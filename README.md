@@ -33,6 +33,7 @@ C:\> terraform.exe apply
 ```
 ## Step Two: Check Running Result
 After terraform apply running successfully, in the output you will see: EC2_IP and ELB_DNS_NAME (in this framework, it used ELB, but ELB need 1 to 2 minutes to start up after terraform run over. So we should better try EC2_IP first). Put EC2_IP or ELB_DNS_NAME into Internet Browser, you should see the Nginx Welcome Page.
+![Kiku](screenshot/terraform_output.png)
 
 ##  Step Tree: The Script Output
 As mentioned above, there are two functional scripts in 'util' dir. These two script would run automatically after docker environment had been built. You can check them through nginx's web service by EC2_LOG_PATH or ELB_LOG_PATH which outputed after terraform apply run over.
