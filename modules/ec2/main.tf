@@ -74,6 +74,8 @@ resource "aws_instance" "web" {
   provisioner "remote-exec" {
     inline = [
       "sed -i s/\\\\r//g build.sh && sh build.sh",
+      "sed -i s/\\\\r//g monitor.sh && nohup sudo sh monitor.sh > monitor.output 2>&1 &",
+      "sudo sh static_words_in_home_page.sh",
     ]
   }
 }
