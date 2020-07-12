@@ -31,4 +31,4 @@ If you are using terrform running in windows, run:
 C:\> terraform.exe init
 C:\> terraform.exe apply
 ```
-
+## Step Two: Check running result
