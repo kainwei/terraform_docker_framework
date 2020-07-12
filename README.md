@@ -49,3 +49,30 @@ Click the monitor log it would show:
 Words statistics script run like:
 ![Kiku](screenshot/words_statistics.png)
 
+##  Step Tree: Trouble Shooting
+Login to VM:
+Check docker running status:
+```
+ubuntu@ip-10-0-1-185:~$ sudo docker ps
+CONTAINER ID        IMAGE                COMMAND                  CREATED             STATUS                    PORTS                NAMES
+f129c266fd00        nginx:my_version01   "/docker-entrypoint.…"   31 minutes ago      Up 31 minutes (healthy)   0.0.0.0:80->80/tcp   nginx01
+ubuntu@ip-10-0-1-185:~$ 
+```
+Check if all files were uploaded to VM:
+```
+ubuntu@ip-10-0-1-185:~$ ls -l
+total 16
+-rw-r--r-- 1 ubuntu ubuntu 288 Jul 12 02:48 Dockerfile
+-rw-r--r-- 1 ubuntu ubuntu 786 Jul 12 02:48 build.sh
+-rw-rw-r-- 1 ubuntu ubuntu   0 Jul 12 02:50 monitor.output
+-rw-r--r-- 1 ubuntu ubuntu 810 Jul 12 02:50 monitor.sh
+-rw-r--r-- 1 ubuntu ubuntu 450 Jul 12 02:48 statistics_words_in_home_page.sh
+ubuntu@ip-10-0-1-185:~$
+```
+
+Check monitor output log:
+```
+ubuntu@ip-10-0-1-185:~$ cat monitor.output 
+ubuntu@ip-10-0-1-185:~$ 
+```
+
