@@ -1,5 +1,5 @@
 # Terraform_Docker_Framework
-This is a framework for [Docker](https://www.docker.com/) is working in [Amazon AWS](https://aws.amazon.com/) cloud environment or [Terraform](https://www.terraform.io/). 
+This is a framework for [Docker](https://www.docker.com/) is working in [Amazon AWS](https://aws.amazon.com/) cloud environment buiding by [Terraform](https://www.terraform.io/). 
 
 ## Directory Descritption
 ### modules: This store aws components which this framwork need by terraform codes. 
